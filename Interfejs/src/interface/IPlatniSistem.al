@@ -1,22 +1,22 @@
 interface IPlatniSistem
 {
-    procedure ProcesuirajUplatu(Iznos: Decimal);
+    procedure ObradiUplatu(Iznos: Decimal);
 }
 
 codeunit 50200 BankovniPlatniSistem implements IPlatniSistem
 {
-    procedure ProcesuirajUplatu(Iznos: Decimal)
+    procedure ObradiUplatu(Iznos: Decimal)
     begin
         // Konkretna implementacija za bankovni platni sistem
-        Message(StrSubstNo('Bankovni sistem procesuira uplatu od %1 Din.', Iznos));
+        Message(StrSubstNo('Bankovni sistem obradjuje uplatu od %1 Din.', Iznos));
     end;
 }
 codeunit 50201 ElektronskiPlatniSistem implements IPlatniSistem
 {
-    procedure ProcesuirajUplatu(Iznos: Decimal)
+    procedure ObradiUplatu(Iznos: Decimal)
     begin
         // Konkretna implementacija za elektronski platni sistem
-        Message(StrSubstNo('Elektronski sistem procesuira uplatu od %1 Din.', Iznos));
+        Message(StrSubstNo('Elektronski sistem obradjuje uplatu od %1 Din.', Iznos));
     end;
 }
 
@@ -75,7 +75,7 @@ page 50200 "Platni Sistem"
                     PlatniSistem: Interface IPlatniSistem;
                 begin
                     PlatniSistemProvajder(PlatniSistem);
-                    PlatniSistem.ProcesuirajUplatu(Iznos);
+                    PlatniSistem.ObradiUplatu(Iznos);
                 end;
             }
         }
