@@ -1,0 +1,39 @@
+{
+  "id": "976cf9fd-370d-4a39-bc83-0bdb4e84c7e5",
+  "name": "Interfejs2",
+  "publisher": "Marko Saric",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "634ebdea-b7d0-4dc2-a269-b9e2b725e8ba",
+      "name": "Interfejs",
+      "publisher": "Marko Saric",
+      "version": "1.0.0.0"
+    }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "24.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "13.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
